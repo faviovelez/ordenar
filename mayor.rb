@@ -90,15 +90,14 @@ else
 end
 
 while arr_order.length < 10
-10.times do |n|
-	if order == "descendente"
-		mayor = arr[n]
-		mayor_index = n
-	elsif order == "ascendente"
-		minor = arr.first
-		minor_index = n
-	end
-end
+	10.times do |n|
+		if order == "descendente"
+			mayor = arr[n]
+			mayor_index = n
+		elsif order == "ascendente"
+			minor = arr.first
+			minor_index = n
+		end
 	end
 	if order == "descendente"
 		arr[mayor_index] = 0
@@ -108,5 +107,7 @@ end
 		arr[minor_index] = 1010
 		arr_order << minor
 		minor = 1010
-end 
+	end
+end
+
 binding.pry
