@@ -1,3 +1,4 @@
+# versión sencilla 
 a = Array.new(100) { rand(1..1000) }
 puts a
 
